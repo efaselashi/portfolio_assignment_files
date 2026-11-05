@@ -12,7 +12,7 @@
     </header>
 
     <main>
-     <form action="thank-you.html" method="get">
+     <form action="thank-you.html" method="post" enctype="multipart/form-data">
 
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -37,6 +37,55 @@
 
     <label for="message">Your Message:</label>
     <textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+        <br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"
+           pattern="[0-9]{10}" placeholder="0912345678" required>
+
+    <br><br>
+
+    <label for="date">Preferred Contact Date:</label>
+    <input type="date" id="date" name="date">
+
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
+
+    <br><br>
+
+    <label for="file">Upload a File:</label>
+    <input type="file" id="file" name="file">
+
+    <br><br>
+
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+
+    <br><br>
+
+    <label for="range">Satisfaction Level:</label>
+    <input type="range" id="range" name="satisfaction" min="1" max="10">
+
+    <br><br>
+
+    <p>Interests:</p>
+    <input type="checkbox" id="web" name="interest" value="web">
+    <label for="web">Web Development</label>
+
+    <input type="checkbox" id="mobile" name="interest" value="mobile">
+    <label for="mobile">Mobile Development</label>
+
+    <br><br>
+
+    <p>Preferred Contact Method:</p>
+    <input type="radio" id="email-contact" name="contact-method" value="email">
+    <label for="email-contact">Email</label>
+
+    <input type="radio" id="phone-contact" name="contact-method" value="phone">
+    <label for="phone-contact">Phone</label>
 
 </fieldset>
 
