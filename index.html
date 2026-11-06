@@ -435,9 +435,29 @@ int main() {
     Special HTML characters:
     &copy; &nbsp; &amp; &lt; &gt; &quot;
 </p>
+<section id="canvas-logo">
+    <h2>My Portfolio Logo</h2>
+
+    <canvas id="myCanvas" width="300" height="150">
+        Your browser does not support canvas.
+    </canvas>
+</section>
 </main>
 <footer>
     <p>&copy; 2026 Ifa Silashi Etafa. All rights reserved.</p>
 </footer>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Draw a dark blue rectangle
+    ctx.fillStyle = "navy";
+    ctx.fillRect(20, 20, 260, 110);
+
+    // Write your name initials
+    ctx.fillStyle = "white";
+    ctx.font = "30px Arial";
+    ctx.fillText("IFA", 115, 85);
+</script>
 </body>
 </html>
