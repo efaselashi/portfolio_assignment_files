@@ -401,6 +401,27 @@ int main() {
         <summary>My Learning Goals</summary>
         <p>I want to improve my programming, web development, and problem-solving skills.</p>
     </details>
+    <button onclick="document.getElementById('myDialog').showModal()">
+    Open Dialog
+</button>
+
+<dialog id="myDialog">
+    <h3>Welcome!</h3>
+    <p>Thank you for visiting my portfolio.</p>
+
+    <button onclick="document.getElementById('myDialog').close()">
+        Close
+    </button>
+</dialog>
+<h3>My Skills</h3>
+<p>HTML knowledge:
+    <meter min="0" max="100" value="70">70%</meter>
+</p>
+
+<h3>Portfolio Progress</h3>
+<p>
+    <progress min="0" max="100" value="80">80%</progress>
+</p>
 </section>
 </main>
 <footer>
